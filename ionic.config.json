@@ -1,0 +1,8 @@
+{
+  "name": "TSSservice",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "d1b75d8f"
+}
