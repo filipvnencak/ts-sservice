@@ -11,24 +11,41 @@
 
 <ion-content>
   <ion-img  src="assets/images/Photos/{{Resorts.cover}}.jpg"></ion-img>  
-  <ion-card>
+  <ion-card >
     
   <ion-item lines= "none">
     <ion-card-subtitle color="primary">Weather</ion-card-subtitle>
    </ion-item> 
    <ion-item lines= "none">
      <ion-grid>
-      <ion-row>
+      <ion-row style="font-size: 3vw;" >
         <ion-col>
-      <ion-icon size= "large" name="partly-sunny-outline"></ion-icon>
+          <ion-text>Partly cloudy</ion-text>
     </ion-col>
     <ion-col>
-     <ion-text>20C</ion-text>
+          <ion-text>Temperature</ion-text>
     </ion-col>
+    <ion-col >
+          <ion-text>Wind</ion-text>
+     </ion-col>
+    </ion-row>
+      <ion-row >
+        <ion-col>
+          <ion-icon size= "large" name="partly-sunny-outline"></ion-icon>
+    </ion-col>
+    <ion-col>
+        <ion-text>20°C</ion-text>
+    </ion-col>
+    <ion-col >
+      <ion-text>3 m/s</ion-text>
+     </ion-col>
     </ion-row>
     </ion-grid>
    </ion-item>
  
 </ion-card>
+<ion-item lines= "none" class="ion-align-self-center">
+  <iframe src="https://imageserver.webcamera.pl/umiesc/bachledova-dolina"  frameborder="0" scrolling="no"></iframe>
+</ion-item>
 
 </ion-content>
