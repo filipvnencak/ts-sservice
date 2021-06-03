@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "TSSservice",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
