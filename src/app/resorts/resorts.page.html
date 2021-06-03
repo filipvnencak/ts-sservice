@@ -1,4 +1,4 @@
-<ion-header [translucent]="true" >
+<ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>Resorts</ion-title>
   </ion-toolbar>
@@ -9,7 +9,7 @@
   <ion-cards *ngFor="let resorts of Resorts">
   <ion-card>
       <ion-item  lines="none" [routerLink]="['/tabs/resorts', resorts.id]">
-        <ion-img  src="assets/images/{{resorts.logo}}.png"></ion-img>
+        <ion-img  src="assets/images/logos/{{resorts.logo}}.png"></ion-img>
       <ion-card-subtitle slot="end">{{resorts.name}}</ion-card-subtitle>
     </ion-item>
   </ion-card>
