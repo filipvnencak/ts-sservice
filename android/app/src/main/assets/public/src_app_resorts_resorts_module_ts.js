@@ -151,7 +151,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar color=\"primary\">\n    <ion-title>Resorts</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-cards *ngFor=\"let resorts of Resorts\">\n  <ion-card>\n      <ion-item  lines=\"none\" [routerLink]=\"['/tabs/resorts', resorts.id]\">\n        <ion-img  src=\"assets/images/logos/{{resorts.logo}}.png\"></ion-img>\n      <ion-card-subtitle slot=\"end\">{{resorts.name}}</ion-card-subtitle>\n    </ion-item>\n  </ion-card>\n</ion-cards>\n</ion-content>\n");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-title>Resorts</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-cards *ngFor=\"let resorts of Resorts\">\n  <ion-card>\n      <ion-item  lines=\"none\" [routerLink]=\"['/tabs/resorts', resorts.id]\">\n        <ion-img  src=\"assets/images/logos/{{resorts.logo}}.png\"></ion-img>\n      <ion-card-subtitle slot=\"end\">{{resorts.name}}</ion-card-subtitle>\n    </ion-item>\n  </ion-card>\n</ion-cards>\n</ion-content>\n");
 
 /***/ })
 

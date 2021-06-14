@@ -1,9 +1,6 @@
 {
-	"appId": "io.ionic.starter",
+	"appId": "io.1PK0.TatrySuperSki",
 	"appName": "TSSservice",
 	"webDir": "www",
-	"bundledWebRuntime": false,
-	"server": {
-		"url": "http://localhost:8101"
-	}
+	"bundledWebRuntime": false
 }

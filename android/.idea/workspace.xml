@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3eb14db2-3070-4fd0-9610-c773fe34be44" name="Default Changelist" comment="Sadaasdad">
+      <change afterPath="$PROJECT_DIR$/../ios/App/App/App.entitlements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/capacitor.build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/capacitor.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/capacitor.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/cordova.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/cordova.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resort_resort_module_ts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resort_resort_module_ts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resort_resort_module_ts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resort_resort_module_ts.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resorts_resorts_module_ts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resorts_resorts_module_ts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resorts_resorts_module_ts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/src_app_resorts_resorts_module_ts.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor-cordova-android-plugins/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor-cordova-android-plugins/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capacitor.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../capacitor.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/App/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/App/capacitor.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App/capacitor.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/App/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/app.module.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1tfSZZHCBYXPlFAVYoogttFGdvK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="/Users/filipvnencak/ts-sservice/android/app/capacitor.build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app/capacitor.build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle./Users/filipvnencak/ts-sservice/android/app/capacitor.build.gradle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3eb14db2-3070-4fd0-9610-c773fe34be44" name="Default Changelist" comment="" />
+      <created>1623158707244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623158707244</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sadaasdad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sadaasdad" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="744" y="354" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623230293323">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state x="744" y="354" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623230293323" />
+    <state x="1002" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623158881705">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state x="1002" y="501" key="#com.intellij.fileTypes.FileTypeChooser/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623158881705" />
+    <state x="100" y="125" width="2360" height="1141" key="AVDManager" timestamp="1623230437385">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state x="100" y="125" width="2360" height="1141" key="AVDManager/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623230437385" />
+    <state x="1076" y="446" key="AndroidProcessChooserDialog" timestamp="1623230289297">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state x="1076" y="446" key="AndroidProcessChooserDialog/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623230289297" />
+    <state width="2539" height="382" key="GridCell.Tab.0.bottom" timestamp="1623405937255">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state width="2539" height="382" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623405937255" />
+    <state width="2539" height="382" key="GridCell.Tab.0.center" timestamp="1623405937253">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state width="2539" height="382" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623405937253" />
+    <state width="2539" height="382" key="GridCell.Tab.0.left" timestamp="1623405937253">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state width="2539" height="382" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623405937253" />
+    <state width="2539" height="382" key="GridCell.Tab.0.right" timestamp="1623405937254">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state width="2539" height="382" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623405937254" />
+    <state x="789" y="331" key="SettingsEditor" timestamp="1623159304488">
+      <screen x="0" y="25" width="2560" height="1341" />
+    </state>
+    <state x="789" y="331" key="SettingsEditor/2560.25.1920.1055/0.25.2560.1341@0.25.2560.1341" timestamp="1623159304488" />
+  </component>
+</project>
