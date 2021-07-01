@@ -10,7 +10,8 @@ export class ResortsService {
     id: 1,
     name: 'Bachledová Dolina', 
     logo:'bachledova_ski', 
-    cover: 'bachledova'
+    cover: 'bachledova',
+    iframe: ''
   },  
   { 
     id: 2,
