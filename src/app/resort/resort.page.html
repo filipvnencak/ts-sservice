@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-item-center"> 
   <ion-img  src="assets/images/Photos/{{Resorts.cover}}.jpg"></ion-img>  
   <ion-card >
     
@@ -45,8 +45,9 @@
    </ion-item>
  
 </ion-card>
-<ion-item lines= "none" class="ion-align-self-center">
-  <iframe  src="https://imageserver.webcamera.pl/umiesc/bachledova-dolina"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ion-item lines= "none" class="ion-item-center">
+  <!-- <iframe  [src]="Resorts.urlvideo"  allowfullscreen></iframe> -->
+  <iframe  [src]='VideoURL' frameborder="0"></iframe>
 </ion-item>
 
 </ion-content>
