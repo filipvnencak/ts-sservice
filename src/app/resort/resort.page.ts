@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ResortsService } from '../resorts.service';
+import { appInitialize } from '@ionic/angular/app-initialize';
+import { ResortsService } from '../services/resorts.service';
+import { WeatherService } from '../services/weather.service';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
+const CITIES_KEY = 'cities';
 
 @Component({
   selector: 'app-resort',
@@ -11,10 +15,11 @@ import { ResortsService } from '../resorts.service';
 export class ResortPage implements OnInit {
 
   Resorts: any;
+  currentWeather: any[];
 
   
   constructor( private readonly ResortService: ResortsService,
-  private activatedRoute: ActivatedRoute,) {  
+  private activatedRoute: ActivatedRoute, private weatherService: WeatherService, private iab: InAppBrowser) {  
   
   }
 
@@ -22,7 +27,40 @@ export class ResortPage implements OnInit {
   ngOnInit() {
     let resortId = this.activatedRoute.snapshot.paramMap.get("id");
     this.Resorts = this.ResortService.getResort(parseInt(resortId));
-   
   }
+  
+ionViewWillEnter() {
+this.loadWeather();
+
+}
+
+loadWeather() {
+
+  this.weatherService.getCurrentWeather().subscribe(res=>{
+    console.log(res);
+
+    this.currentWeather = res;
+
+    
+      this.weatherService.getCurrentWeather().then(function(data) {
+            $scope.city = data;
+      })
+  }) 
+}
+
+onShow() {
+  this.iab.create('browser').show();
+
+  const browser = this.iab.create('https://google.com/');
+
+
+browser.on('loadstop').subscribe(event => {
+   browser.insertCSS({ code: "body{color: red;" });
+});
+
+browser.close();
+}
+
+
 
 }

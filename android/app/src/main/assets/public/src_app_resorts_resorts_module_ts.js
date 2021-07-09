@@ -96,7 +96,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _raw_loader_resorts_page_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !raw-loader!./resorts.page.html */ 7202);
 /* harmony import */ var _resorts_page_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resorts.page.scss */ 481);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _resorts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../resorts.service */ 7890);
+/* harmony import */ var _services_resorts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/resorts.service */ 7881);
 
 
 
@@ -111,7 +111,7 @@ let ResortsPage = class ResortsPage {
     }
 };
 ResortsPage.ctorParameters = () => [
-    { type: _resorts_service__WEBPACK_IMPORTED_MODULE_2__.ResortsService }
+    { type: _services_resorts_service__WEBPACK_IMPORTED_MODULE_2__.ResortsService }
 ];
 ResortsPage = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_4__.Component)({

@@ -96,9 +96,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _raw_loader_resort_page_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !raw-loader!./resort.page.html */ 8588);
 /* harmony import */ var _resort_page_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resort.page.scss */ 6578);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _resorts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../resorts.service */ 7890);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ 9075);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 9895);
+/* harmony import */ var _services_resorts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/resorts.service */ 7881);
+/* harmony import */ var _services_weather_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/weather.service */ 1834);
 
 
 
@@ -107,21 +107,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ResortPage = class ResortPage {
-    constructor(ResortService, activatedRoute, sanitizer) {
+    constructor(ResortService, activatedRoute, weatherService) {
         this.ResortService = ResortService;
         this.activatedRoute = activatedRoute;
-        this.sanitizer = sanitizer;
+        this.weatherService = weatherService;
     }
     ngOnInit() {
         let resortId = this.activatedRoute.snapshot.paramMap.get("id");
         this.Resorts = this.ResortService.getResort(parseInt(resortId));
-        this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
+    }
+    ionViewWillEnter() {
+        this.loadWeather();
+    }
+    loadWeather() {
+        this.weatherService.getCurrentWeather().subscribe(res => {
+            console.log(res);
+            this.currentWeather = res;
+        });
     }
 };
 ResortPage.ctorParameters = () => [
-    { type: _resorts_service__WEBPACK_IMPORTED_MODULE_2__.ResortsService },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__.ActivatedRoute },
-    { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.DomSanitizer }
+    { type: _services_resorts_service__WEBPACK_IMPORTED_MODULE_2__.ResortsService },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__.ActivatedRoute },
+    { type: _services_weather_service__WEBPACK_IMPORTED_MODULE_3__.WeatherService }
 ];
 ResortPage = (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_6__.Component)({
@@ -130,6 +138,56 @@ ResortPage = (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([
         styles: [_resort_page_scss__WEBPACK_IMPORTED_MODULE_1__.default]
     })
 ], ResortPage);
+
+
+
+/***/ }),
+
+/***/ 1834:
+/*!*********************************************!*\
+  !*** ./src/app/services/weather.service.ts ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "WeatherService": () => (/* binding */ WeatherService)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ 4762);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 1841);
+/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 2340);
+/* harmony import */ var _resorts_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resorts.service */ 7881);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 9895);
+
+
+
+
+
+
+let WeatherService = class WeatherService {
+    constructor(http, resorts, activatedRoute) {
+        this.http = http;
+        this.resorts = resorts;
+        this.activatedRoute = activatedRoute;
+        this.units = 'metric';
+        this.baseURL = 'https://api.openweathermap.org/data/2.5';
+    }
+    getCurrentWeather() {
+        return this.http.get(`${this.baseURL}/weather?q=this.place&appid=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.apiKey}`);
+    }
+};
+WeatherService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient },
+    { type: _resorts_service__WEBPACK_IMPORTED_MODULE_1__.ResortsService },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__.ActivatedRoute }
+];
+WeatherService = (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.Injectable)({
+        providedIn: 'root'
+    })
+], WeatherService);
 
 
 
@@ -161,7 +219,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n     <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"tabs/resorts\"></ion-back-button>\n      </ion-buttons>\n    </ion-buttons>\n    <ion-title>{{Resorts.name}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-img  src=\"assets/images/Photos/{{Resorts.cover}}.jpg\"></ion-img>  \n  <ion-card >\n    \n  <ion-item lines= \"none\">\n    <ion-card-subtitle color=\"primary\">Weather</ion-card-subtitle>\n   </ion-item> \n   <ion-item lines= \"none\">\n     <ion-grid>\n      <ion-row class=\"ion-text-center\" style=\"font-size: 3vw;\" >\n        <ion-col class=\"ion-text-center\" size= \"4\">\n          <ion-text>Partly cloudy</ion-text>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n          <ion-text>Wind</ion-text>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n          \n          <ion-text>Temperature</ion-text>\n     </ion-col>\n    </ion-row >\n      <ion-row class=\"ion-text-center\">\n        <ion-col class=\"ion-text-center\" size= \"4\">\n          <ion-icon size= \"large\" name=\"partly-sunny-outline\"></ion-icon>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n        <ion-text>3 m/s</ion-text>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n      <ion-text>20°C</ion-text>\n     </ion-col>\n    </ion-row>\n    </ion-grid>\n   </ion-item>\n \n</ion-card>\n<ion-item lines= \"none\" class=\"ion-align-self-center\">\n  <iframe  src=\"https://imageserver.webcamera.pl/umiesc/bachledova-dolina\" sandbox allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</ion-item>\n\n</ion-content>\n\n\n");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n     <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"tabs/resorts\"></ion-back-button>\n      </ion-buttons>\n    </ion-buttons>\n    <ion-title>{{Resorts.name}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content class=\"ion-item-center\"> \n  <ion-img  src=\"assets/images/Photos/{{Resorts.cover}}.jpg\"></ion-img>  \n  <ion-card >\n    \n  <ion-item lines= \"none\">\n    <ion-card-subtitle color=\"primary\">Weather</ion-card-subtitle>\n   </ion-item> \n   <ion-item lines= \"none\">\n     <ion-grid>\n      <ion-row class=\"ion-text-center\" style=\"font-size: 3vw;\" >\n        <ion-col class=\"ion-text-center\" size= \"4\">\n          <ion-text>Partly cloudy</ion-text>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n          <ion-text>Wind</ion-text>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n          \n          <ion-text>Temperature</ion-text>\n     </ion-col>\n    </ion-row >\n      <ion-row class=\"ion-text-center\">\n        <ion-col class=\"ion-text-center\" size= \"4\">\n          <ion-icon size= \"large\" name=\"partly-sunny-outline\"></ion-icon>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n        <ion-text>3 m/s</ion-text>\n    </ion-col>\n    <ion-col class=\"ion-text-center\" size= \"4\">\n      <ion-text>20°C</ion-text>\n     </ion-col>\n    </ion-row>\n    </ion-grid>\n   </ion-item>\n \n</ion-card>\n<ion-item lines= \"none\" class=\"ion-item-center\">\n  <!-- <iframe  [src]=\"Resorts.urlvideo\"  allowfullscreen></iframe> -->\n  <!-- <iframe  [src]='VideoURL' frameborder=\"0\"></iframe> -->\n</ion-item>\n\n</ion-content>\n\n\n");
 
 /***/ })
 
