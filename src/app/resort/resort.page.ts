@@ -42,9 +42,7 @@ loadWeather() {
     this.currentWeather = res;
 
     
-      this.weatherService.getCurrentWeather().then(function(data) {
-            $scope.city = data;
-      })
+      
   }) 
 }
 
