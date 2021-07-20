@@ -165,9 +165,6 @@ export class ResortsService {
   },
 ]
   static Resorts: any;
-  
-
-
 
   constructor() { 
     
