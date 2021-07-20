@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -15,7 +16,7 @@ export class ResortsService {
     logo:'bachledova_ski', 
     cover: 'bachledova',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Ždiar'
+    city: 'Bratislava'
   },  
   { 
     id: 2,
@@ -23,7 +24,7 @@ export class ResortsService {
     logo: 'bania_ski_fun', 
     cover: 'Bania1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Białka Tatrzańska'
+    city: 'Białka Tatrzańska'
   }, 
   {
     id: 3,
@@ -31,7 +32,7 @@ export class ResortsService {
     logo: 'czorsztyn_ski', 
     cover: 'CzorsztynSki1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Czorstyn'
+    city: 'Czorstyn'
   }, 
   {
     id: 4,
@@ -39,7 +40,7 @@ export class ResortsService {
     logo: 'dluga_polana', 
     cover: 'DlugaPolana',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Nowy Targ'
+    city: 'Nowy Targ'
   }, 
   {
     id: 5,
@@ -47,7 +48,7 @@ export class ResortsService {
     logo: 'grapaski', 
     cover: 'GrapaSki1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Czarna Gora'
+    city: 'Czarna Gora'
   },
   {
     id: 6,
@@ -55,7 +56,7 @@ export class ResortsService {
     logo: 'harenda', 
     cover: 'Harenda',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Zakopane'
+    city: 'Zakopane'
   }, 
   {
     id: 7,
@@ -63,7 +64,7 @@ export class ResortsService {
     logo: 'hornikow_kolor', 
     cover: 'Hornikow',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Białka Tatrzańska'
+    city: 'Białka Tatrzańska'
   },   
   {
     id: 8,
@@ -71,7 +72,7 @@ export class ResortsService {
     logo: 'jurgow_ski', 
     cover: 'JurgowSki',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Jurgow'
+    city: 'Jurgow'
   },  
   {
     id: 9,
@@ -79,7 +80,7 @@ export class ResortsService {
     logo: 'kaniowka',
     cover: 'kaniowka',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Białka Tatrzańska'
+    city: 'Białka Tatrzańska'
 
   },
   {
@@ -88,7 +89,7 @@ export class ResortsService {
     logo: 'kotelnica_bialczanska',
     cover: 'Kotelnica',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Białka Tatrzańska'
+    city: 'Białka Tatrzańska'
   },
   {
     id: 11,
@@ -96,7 +97,7 @@ export class ResortsService {
     logo: 'koziniec_ski',
     cover: 'Koziniec',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Czarna Gora'
+    city: 'Czarna Gora'
   },
   {
     id: 12,
@@ -104,7 +105,7 @@ export class ResortsService {
     logo: 'meander',
     cover: 'Meander',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Oravice'
+    city: 'Oravice'
   },
   {
     id: 13,
@@ -112,7 +113,7 @@ export class ResortsService {
     logo: 'pkl_mosorny_gron',
     cover: 'PKL_MOSORNY_GROŃ',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Ždiar'
+    city: 'Ždiar'
   },
   {
     id: 14,
@@ -120,7 +121,7 @@ export class ResortsService {
     logo: 'pkl_palenica_2',
     cover: 'PKLPalenica1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Palenica'
+    city: 'Palenica'
   },
   {
     id: 15,
@@ -128,7 +129,7 @@ export class ResortsService {
     logo: 'polana_szymoszkowa',
     cover: 'Polana_szymoszkowa',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Zakopane'
+    city: 'Zakopane'
   },
   {
     id: 16,
@@ -136,7 +137,7 @@ export class ResortsService {
     logo: 'rusinski',
     cover: 'RusinSki',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Bukowina Tatrzańska'
+    city: 'Bukowina Tatrzańska'
   },
   {
     id: 17,
@@ -144,7 +145,7 @@ export class ResortsService {
     logo: 'Logo_Ski Centrum Strachan',
     cover: 'Strachan',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Ždiar'
+    city: 'Ždiar'
   },
   {
     id: 18,
@@ -152,7 +153,7 @@ export class ResortsService {
     logo: 'suche',
     cover: 'Suche',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Suche'
+    city: 'Suche'
   },
   {
     id: 19,
@@ -160,13 +161,16 @@ export class ResortsService {
     logo: 'witow_ski',
     cover: 'WitówSki1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    place: 'Ždiar'
+    city: 'Ždiar'
   },
 ]
   static Resorts: any;
+  
+
 
 
   constructor() { 
+    
   }
 
   getResorts() {
@@ -175,7 +179,17 @@ export class ResortsService {
   getResort(id: number): any {
     return this.Resorts.find(el => el.id == id);
   }
+ 
+
+  getCity(city: string): any {
+    return this.Resorts.find(obj => obj.city == city);
+    // this.route.params.subscribe(params => {
+    // this.clientData = params.clientId;
+};
+
+  }
+  
 
   
 
-}
+

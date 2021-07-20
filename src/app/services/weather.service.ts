@@ -9,15 +9,27 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class WeatherService {
 
-  place: string;
+  cityId: number;
+  private city: any
   private units = 'metric';
   private baseURL = 'https://api.openweathermap.org/data/2.5';
-  constructor(private http: HttpClient,  private resorts: ResortsService, private activatedRoute: ActivatedRoute) { }
- 
+  constructor(private http: HttpClient,  private resorts: ResortsService, private activatedRoute: ActivatedRoute) { 
+     
+    
+  }
+
+  ngOnInit (){
+    
+      let cityId = this.activatedRoute.snapshot.paramMap.get("id");
+      this.city = this.resorts.getResort(parseInt(cityId));
+    
+  };
 
   getCurrentWeather(){
-return this.http.get<any[]>(`${this.baseURL}/weather?q=Bratislava&appid=${environment.apiKey}`);
+return this.http.get<any>(`${this.baseURL}/weather?q=${this.city}&appid=${environment.apiKey}&units=${this.units}`);
 }
 
 
+
 }
+

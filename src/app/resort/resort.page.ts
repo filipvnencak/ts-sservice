@@ -5,7 +5,6 @@ import { ResortsService } from '../services/resorts.service';
 import { WeatherService } from '../services/weather.service';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
-const CITIES_KEY = 'cities';
 
 @Component({
   selector: 'app-resort',
@@ -14,8 +13,10 @@ const CITIES_KEY = 'cities';
 })
 export class ResortPage implements OnInit {
 
+  
+  currentWeather: any;
   Resorts: any;
-  currentWeather: any[];
+  
 
   
   constructor( private readonly ResortService: ResortsService,
@@ -45,20 +46,6 @@ loadWeather() {
       
   }) 
 }
-
-onShow() {
-  this.iab.create('browser').show();
-
-  const browser = this.iab.create('https://google.com/');
-
-
-browser.on('loadstop').subscribe(event => {
-   browser.insertCSS({ code: "body{color: red;" });
-});
-
-browser.close();
-}
-
 
 
 }
