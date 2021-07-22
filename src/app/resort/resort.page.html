@@ -11,16 +11,17 @@
 
 <ion-content class="ion-item-center"> 
   <ion-img  src="assets/images/Photos/{{Resorts.cover}}.jpg"></ion-img>  
+  
+  <ion-cards >
   <ion-card >
-    
   <ion-item lines= "none">
     <ion-card-subtitle color="primary">Weather</ion-card-subtitle>
    </ion-item> 
-   <ion-item lines= "none">
+   <ion-item lines= "none" *ngIf="place"  >
      <ion-grid>
       <ion-row class="ion-text-center" style="font-size: 3vw;" >
         <ion-col class="ion-text-center" size= "4">
-          <ion-text>Partly cloudy</ion-text>
+          <!-- <ion-text>{{place.weather[0].description}}</ion-text> -->
     </ion-col>
     <ion-col class="ion-text-center" size= "4">
           <ion-text>Wind</ion-text>
@@ -32,19 +33,20 @@
     </ion-row >
       <ion-row class="ion-text-center">
         <ion-col class="ion-text-center" size= "4">
-          <ion-icon size= "large" name="partly-sunny-outline"></ion-icon>
+          <div *ngIf="weatherIcon" class="icon"><img src="{{weatherIcon}}" alt="clima"></div>
     </ion-col>
     <ion-col class="ion-text-center" size= "4">
-        <ion-text>3 m/s</ion-text>
+        <ion-text>{{place.wind.speed | number: '1.0-0'}}m/s</ion-text>
     </ion-col>
     <ion-col class="ion-text-center"  size= "4">
-      <ion-text></ion-text>
+      <ion-text> {{place.main.temp | number: '1.0-0'}}°C</ion-text>
      </ion-col>
     </ion-row>
     </ion-grid>
    </ion-item>
- 
+
 </ion-card>
+</ion-cards>
 <ion-item lines= "none" class="ion-item-center">
 
   <ion-button (click)="onShow()" expand="block" fill="clear" shape="round">

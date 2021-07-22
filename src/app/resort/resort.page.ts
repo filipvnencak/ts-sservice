@@ -14,8 +14,9 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 export class ResortPage implements OnInit {
 
   
-  currentWeather: any;
+  place;
   Resorts: any;
+  weatherIcon;
   
 
   
@@ -28,6 +29,7 @@ export class ResortPage implements OnInit {
   ngOnInit() {
     let resortId = this.activatedRoute.snapshot.paramMap.get("id");
     this.Resorts = this.ResortService.getResort(parseInt(resortId));
+    
   }
   
 ionViewWillEnter() {
@@ -37,11 +39,10 @@ this.loadWeather();
 
 loadWeather() {
 
-  this.weatherService.getCurrentWeather().subscribe(res=>{
-    console.log(res);
-
-    this.currentWeather = res;
-
+  this.weatherService.getCurrentWeather(this.Resorts.city).subscribe(res=>{
+    console.log('weater result: ', res);
+    this.place = res;
+    this.weatherIcon = 'http://openweathermap.org/img/w/' + res['weather'][0].icon + '.png';
     
       
   }) 

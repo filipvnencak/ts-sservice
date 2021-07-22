@@ -18,12 +18,8 @@ export class WeatherService {
     
   }
 
-  ngOnInit (){
-   
-  };
-
-  getCurrentWeather(){
-return this.http.get<any>(`${this.baseURL}/weather?q=${this.city}&appid=${environment.apiKey}&units=${this.units}`);
+  getCurrentWeather(city){
+    return this.http.get<any>(`${this.baseURL}/weather?q=${city}&appid=${environment.apiKey}&units=${this.units}`);
 }
 
 

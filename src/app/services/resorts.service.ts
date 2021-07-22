@@ -16,7 +16,7 @@ export class ResortsService {
     logo:'bachledova_ski', 
     cover: 'bachledova',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    city: 'Bratislava'
+    city: 'Ždiar'
   },  
   { 
     id: 2,
@@ -32,7 +32,7 @@ export class ResortsService {
     logo: 'czorsztyn_ski', 
     cover: 'CzorsztynSki1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    city: 'Czorstyn'
+    city: 'Kluszkowce'
   }, 
   {
     id: 4,
@@ -72,7 +72,7 @@ export class ResortsService {
     logo: 'jurgow_ski', 
     cover: 'JurgowSki',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    city: 'Jurgow'
+    city: 'Jurgów'
   },  
   {
     id: 9,
@@ -105,7 +105,7 @@ export class ResortsService {
     logo: 'meander',
     cover: 'Meander',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    city: 'Oravice'
+    city: 'Vitanová'
   },
   {
     id: 13,
@@ -113,7 +113,7 @@ export class ResortsService {
     logo: 'pkl_mosorny_gron',
     cover: 'PKL_MOSORNY_GROŃ',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    city: 'Ždiar'
+    city: 'Zawoja'
   },
   {
     id: 14,
@@ -121,7 +121,7 @@ export class ResortsService {
     logo: 'pkl_palenica_2',
     cover: 'PKLPalenica1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    city: 'Palenica'
+    city: 'Szczawnica'
   },
   {
     id: 15,
@@ -161,7 +161,7 @@ export class ResortsService {
     logo: 'witow_ski',
     cover: 'WitówSki1',
     VideoURL: 'https://imageserver.webcamera.pl/umiesc/bachledova-dolina',
-    city: 'Ždiar'
+    city: 'Witów'
   },
 ]
   static Resorts: any;
@@ -178,11 +178,7 @@ export class ResortsService {
   }
  
 
-  getCity(city: string): any {
-    return this.Resorts.find(obj => obj.city == city);
-    // this.route.params.subscribe(params => {
-    // this.clientData = params.clientId;
-};
+  
 
   }
   
