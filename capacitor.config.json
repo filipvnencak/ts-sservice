@@ -1,6 +1,6 @@
 {
-	"appId": "io.1PK0.TatrySuperSki",
-	"appName": "TSSservice",
-	"webDir": "www",
-	"bundledWebRuntime": false
+  "appId": "com.skicontrol.TatrySuperSki",
+  "appName": "TatrySuperSki",
+  "webDir": "www",
+  "bundledWebRuntime": false
 }
