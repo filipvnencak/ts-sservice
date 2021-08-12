@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OneSignal } from '@ionic-native/onesignal/ngx';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,10 @@ import { OneSignal } from '@ionic-native/onesignal/ngx';
 export class AppComponent {
   alertController: any;
   constructor(
-    private oneSignal: OneSignal
+    private oneSignal: OneSignal, private storage: Storage
   ) {
     this.setupPush();
+    this.storage.create()
   }
   
   

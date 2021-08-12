@@ -1,0 +1,64 @@
+[Warning] Native: tried calling OneSignal.startInit, but Cordova is not available. Make sure to include cordova.js or run in a device/simulator (vendor.js, line 89445)
+[Warning] Native: tried calling OneSignal.inFocusDisplaying, but Cordova is not available. Make sure to include cordova.js or run in a device/simulator (vendor.js, line 89445)
+[Warning] Native: tried calling OneSignal.handleNotificationReceived, but Cordova is not available. Make sure to include cordova.js or run in a device/simulator (vendor.js, line 89445)
+[Warning] Native: tried calling OneSignal.handleNotificationOpened, but Cordova is not available. Make sure to include cordova.js or run in a device/simulator (vendor.js, line 89445)
+[Warning] Native: tried calling OneSignal.endInit, but Cordova is not available. Make sure to include cordova.js or run in a device/simulator (vendor.js, line 89445)
+[Log] Angular is running in development mode. Call enableProdMode() to enable production mode. (vendor.js, line 67666)
+[Error] ERROR – "cordova_not_available"
+	defaultErrorLogger (vendor.js:46088)
+	handleError (vendor.js:46136)
+	next (vendor.js:68906)
+	next
+	__tryOrUnsub (vendor.js:106691)
+	next (vendor.js:106630)
+	_next (vendor.js:106580)
+	next (vendor.js:106557)
+	next (vendor.js:106341)
+	emit (vendor.js:65569)
+	(anonymná funkcia) (polyfills.js:196)
+	onHandleError (vendor.js:68325)
+	(anonymná funkcia) (polyfills.js:244)
+	(anonymná funkcia) (polyfills.js:552)
+[Info] [WDS] Live Reloading enabled. (vendor.js, line 117127)
+[Error] ERROR – Error: Uncaught (in promise): Error: Database not created. Must call create() first
+assertDb@http://localhost:8100/vendor.js:101458:28
+get@http://localhost:8100/vendor.js:101468:33
+http://localhost:8100/src_app_tab1_tab1_module_ts.js:39:29
+onInvoke@http://localhost:8100/vendor.js:68299:39
+http://localhost:8100/polyfills.js:196:53
+http://localhost:8100/polyfills.js:1354:41
+onInvokeTask@http://localhost:8100/vendor.js:68286:43
+http://localhost:8100/polyfills.js:241:61
+drainMicroTaskQueue@http://localhost:8100/polyfills.js:656:46
+promiseReactionJob@[native code]
+Error: Uncaught (in promise): Error: Database not created. Must call create() first
+assertDb@http://localhost:8100/vendor.js:101458:28
+get@http://localhost:8100/vendor.js:101468:33
+http://localhost:8100/src_app_tab1_tab1_module_ts.js:39:29
+onInvoke@http://localhost:8100/vendor.js:68299:39
+http://localhost:8100/polyfills.js:196:53
+http://localhost:8100/polyfills.js:1354:41
+onInvokeTask@http://localhost:8100/vendor.js:68286:43
+http://localhost:8100/polyfills.js:241:61
+drainMicroTaskQueue@http://localhost:8100/polyfills.js:656:46
+promiseReactionJob@[native code]
+	defaultErrorLogger (vendor.js:46088)
+	handleError (vendor.js:46136)
+	next (vendor.js:68906)
+	next
+	__tryOrUnsub (vendor.js:106691)
+	next (vendor.js:106630)
+	_next (vendor.js:106580)
+	next (vendor.js:106557)
+	next (vendor.js:106341)
+	emit (vendor.js:65569)
+	(anonymná funkcia) (polyfills.js:196)
+	onHandleError (vendor.js:68325)
+	(anonymná funkcia) (polyfills.js:210)
+	_loop_2 (polyfills.js:1149)
+	(anonymná funkcia) (polyfills.js:1161)
+	drainMicroTaskQueue (polyfills.js:663)
+	promiseReactionJob
+[Log] request:  – "https://tss.1pk0.sk//index.php//wp-json//wp//v2///posts?_embed" (src_app_tab1_tab1_module_ts.js, line 62)
+[Log] res:  – {posts: Array, pages: "2", totalPosts: "6"} (src_app_tab1_tab1_module_ts.js, line 257)
+{posts: Array, pages: "2", totalPosts: "6"}Object
