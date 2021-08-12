@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   apiKey: '4e3b332f888f8994ba06993ee366c18a',
   baseURL: 'https://api.openweathermap.org/data/2.5',
+  apiUrl: 'https://tss.1pk0.sk//index.php//wp-json//wp//v2//'
   
 };
 

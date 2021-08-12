@@ -27,6 +27,7 @@ const routes: Routes = [
         path: 'resorts/:id',
         loadChildren: () => import('../resort/resort.module').then( m => m.ResortPageModule)
       },
+      
       {
         path: '',
         redirectTo: '/tabs/tab1',

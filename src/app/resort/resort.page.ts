@@ -4,6 +4,8 @@ import { appInitialize } from '@ionic/angular/app-initialize';
 import { ResortsService } from '../services/resorts.service';
 import { WeatherService } from '../services/weather.service';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+import { Router } from '@angular/router';
+import { Plugins } from '@capacitor/core';
 
 
 @Component({
@@ -21,7 +23,7 @@ export class ResortPage implements OnInit {
 
   
   constructor( private readonly ResortService: ResortsService,
-  private activatedRoute: ActivatedRoute, private weatherService: WeatherService, private iab: InAppBrowser) {  
+  private activatedRoute: ActivatedRoute, private weatherService: WeatherService, private iab: InAppBrowser, private router: Router) {  
   
   }
 
@@ -47,6 +49,4 @@ loadWeather() {
       
   }) 
 }
-
-
 }

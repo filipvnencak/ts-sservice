@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">TSSservice</string>
-    <string name="title_activity_main">TSSservice</string>
-    <string name="package_name">io.1PK0.TatrySuperSki</string>
-    <string name="custom_url_scheme">io.1PK0.TatrySuperSki</string>
+    <string name="app_name">TatrySuperSki</string>
+    <string name="title_activity_main">TatrySuperSki</string>
+    <string name="package_name">com.skicontrol.TatrySuperSki</string>
+    <string name="custom_url_scheme">com.skicontrol.TatrySuperSki</string>
 </resources>

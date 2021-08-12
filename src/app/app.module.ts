@@ -9,12 +9,15 @@ import { AppComponent } from './app.component';
 import { OneSignal } from '@ionic-native/onesignal/ngx';
 import { HttpClientModule } from '@angular/common/http';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+import { IonicStorageModule } from '@ionic/storage-angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, OneSignal,InAppBrowser],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, IonicStorageModule.forRoot() ],
+  providers: [StatusBar,SplashScreen, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, OneSignal,InAppBrowser],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

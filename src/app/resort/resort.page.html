@@ -13,15 +13,16 @@
   <ion-img  src="assets/images/Photos/{{Resorts.cover}}.jpg"></ion-img>  
   
   <ion-cards >
-  <ion-card >
-  <ion-item lines= "none">
+  <ion-card>
+    <!-- weather card -->
+  <ion-item lines= "none" [routerLink]="['weather']">
     <ion-card-subtitle color="primary">Weather</ion-card-subtitle>
    </ion-item> 
    <ion-item lines= "none" *ngIf="place"  >
      <ion-grid>
       <ion-row class="ion-text-center" style="font-size: 3vw;" >
         <ion-col class="ion-text-center" size= "4">
-          <!-- <ion-text>{{place.weather[0].description}}</ion-text> -->
+         
     </ion-col>
     <ion-col class="ion-text-center" size= "4">
           <ion-text>Wind</ion-text>
