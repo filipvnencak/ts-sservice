@@ -27,6 +27,10 @@ const routes: Routes = [
         path: 'resorts/:id',
         loadChildren: () => import('../resort/resort.module').then( m => m.ResortPageModule)
       },
+      {
+        path: 'tab1/:id',
+        loadChildren: () => import('../post-detail/post-detail.module').then( m => m.PostDetailPageModule)
+      },
       
       {
         path: '',

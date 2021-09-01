@@ -8,9 +8,21 @@ import { Storage } from '@ionic/storage';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  public appPages = [
+    {
+      title: 'Posts',
+      url: '/tab1',
+      icon: 'newspaper'
+    },
+    {
+      title: 'Account',
+      url: '/account',
+      icon: 'person-circle'
+    }
+  ];
   alertController: any;
   constructor(
-    private oneSignal: OneSignal, private storage: Storage
+    private oneSignal: OneSignal, private storage: Storage,
   ) {
     this.setupPush();
     this.storage.create()
