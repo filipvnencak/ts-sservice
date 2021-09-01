@@ -28,27 +28,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="126a3f69-2248-41e3-bb8f-e6ddaa24de11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/capacitor.build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/capacitor.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/capacitor.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/capacitor.plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/capacitor.plugins.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/src_app_tab1_tab1_module_ts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/src_app_tab1_tab1_module_ts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/src_app_tab1_tab1_module_ts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/src_app_tab1_tab1_module_ts.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capacitor.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../capacitor.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ios/App/App/App.entitlements" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/App/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/App/capacitor.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App/capacitor.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/tab1/tab1.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/tab1/tab1.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/tab1/tab1.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/tab1/tab1.page.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +53,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="SerialNumber@df3f81a2" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-08-31T12:04:57.168455Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="true" />
   </component>

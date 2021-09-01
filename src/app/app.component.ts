@@ -20,28 +20,20 @@ export class AppComponent {
   
   setupPush(){
     this.oneSignal.startInit('6c5dde07-e32a-40b7-938f-0adaf10651f5', '169186379644');
-    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.None);
-    
-    this.oneSignal.handleNotificationReceived().subscribe(data => {
-      let msg = data.payload.body;
-      let title = data.payload.title;
-      let additionalData = data.payload.additionalData;
-      this.showAlert (title, msg, additionalData.task);
+
+    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+
+    this.oneSignal.handleNotificationReceived().subscribe(msg => {
+      console.log('RECEIVED: ', msg);
+      // do something when notification is received
     });
-    this.oneSignal.handleNotificationOpened().subscribe(data => {});
+
+    this.oneSignal.handleNotificationOpened().subscribe(msg => {
+      console.log('OPENED: ', msg);
+      // do soopenmething when a notification is opened
+    });
+
     this.oneSignal.endInit();
   }
- async showAlert(title: string, msg: string, additionalData: any) {
-  
-     const alert = await this.alertController.create({
-       header: title,
-       subHeader: msg,
-       message: 'This is an alert message.',
-       buttons: ['OK']
-     });
-   
-    
-       alert.present();
-    }
   }
 

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { appInitialize } from '@ionic/angular/app-initialize';
-import { ResortsService } from '../services/resorts.service';
-import { WeatherService } from '../services/weather.service';
+import { ResortsService } from '../../services/resorts.service';
+import { WeatherService } from '../../services/weather.service';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { Router } from '@angular/router';
 import { Plugins } from '@capacitor/core';
