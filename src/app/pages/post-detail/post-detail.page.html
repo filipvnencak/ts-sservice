@@ -1,12 +1,13 @@
-<ion-header>
-  <ion-toolbar color="primary">
+<ion-header class="ion-no-border">
+  <ion-toolbar >
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/posts"></ion-back-button>
+      <ion-back-button defaultHref="/tab1"></ion-back-button>
     </ion-buttons>
     <ion-title>{{ post?.title.rendered }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
 <ion-content class="ion-padding">
 
   <div *ngIf="post">
@@ -16,5 +17,4 @@
 
   
 </ion-content>
-
 

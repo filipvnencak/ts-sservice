@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../services/api.service';
@@ -8,7 +9,7 @@ const { Share } = Plugins;
 
 @Component({
   selector: 'app-post-detail',
-  templateUrl: './post-detail.page.html',
+  templateUrl: 'post-detail.page.html',
   styleUrls: ['./post-detail.page.scss'],
 })
 export class PostDetailPage implements OnInit {
@@ -17,15 +18,15 @@ export class PostDetailPage implements OnInit {
   comments = [];
   newComment = '';
 
+ 
   constructor(private route: ActivatedRoute, private api: ApiService, private alertCtrl: AlertController) { }
 
   ngOnInit() {
+  
     let id = this.route.snapshot.paramMap.get('id');
     this.api.getPostContent(id).subscribe(res => {
       console.log('post: ', res);
       this.post = res;
     });
-
-  
   }
 }

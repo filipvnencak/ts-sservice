@@ -1,8 +1,7 @@
 {
   "name": "TatrySuperSki",
   "integrations": {
-    "capacitor": {},
-    "cordova": {}
+    "capacitor": {}
   },
   "type": "angular",
   "id": "d1b75d8f"
