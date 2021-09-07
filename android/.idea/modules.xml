@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/capacitor-cordova-android-plugins/android.capacitor-cordova-android-plugins.iml" filepath="$PROJECT_DIR$/.idea/modules/capacitor-cordova-android-plugins/android.capacitor-cordova-android-plugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2056132808/android.capacitor-haptics.iml" filepath="$PROJECT_DIR$/.idea/modules/-2056132808/android.capacitor-haptics.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/963036331/android.capacitor-keyboard.iml" filepath="$PROJECT_DIR$/.idea/modules/963036331/android.capacitor-keyboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/900807159/android.capacitor-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/900807159/android.capacitor-storage.iml" />
     </modules>
   </component>
 </project>

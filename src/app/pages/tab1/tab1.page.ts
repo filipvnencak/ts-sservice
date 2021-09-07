@@ -22,7 +22,7 @@ export class Tab1Page {
   ) {}
 
   ngOnInit() {
-    this.loadPosts();
+     this.loadPosts();
   }
   async loadPosts(infiniteScroll = null) {
     let loading = null;

@@ -1,23 +1,23 @@
 {
   "images" : [
     {
+      "filename" : "AKTUALNE LOGO I KSIĘGA ZNAKU TATRY SUPER SKI\\TATRY_SUPER_SKI_Bez_Tła-1.png",
       "idiom" : "universal",
-      "filename" : "splash-2732x2732-2.png",
       "scale" : "1x"
     },
     {
+      "filename" : "AKTUALNE LOGO I KSIĘGA ZNAKU TATRY SUPER SKI\\TATRY_SUPER_SKI_Bez_Tła.png",
       "idiom" : "universal",
-      "filename" : "splash-2732x2732-1.png",
       "scale" : "2x"
     },
     {
+      "filename" : "AKTUALNE LOGO I KSIĘGA ZNAKU TATRY SUPER SKI\\TATRY_SUPER_SKI_Bez_Tła-2.png",
       "idiom" : "universal",
-      "filename" : "splash-2732x2732.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

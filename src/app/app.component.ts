@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { OneSignal } from '@ionic-native/onesignal/ngx';
 import { Storage } from '@ionic/storage';
+import { SplashScreen } from '@capacitor/splash-screen';
+import { Platform } from '@ionic/angular';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { ApiService } from './services/api.service';
 
 @Component({
   selector: 'app-root',
@@ -22,12 +26,30 @@ export class AppComponent {
   ];
   alertController: any;
   constructor(
-    private oneSignal: OneSignal, private storage: Storage,
+    private oneSignal: OneSignal, private storage: Storage, private platform: Platform, private statusBar: StatusBar, private api: ApiService,
   ) {
-    this.setupPush();
+    // this.initializeApp();
     this.storage.create()
   }
   
+  initializeApp() {
+    this.platform.ready().then(() => {
+      this.statusBar.styleDefault();
+      SplashScreen.hide();
+      this.setupPush();
+    });
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 2000);
+  }
+
+  ngOnInit() {
+    // this.api.getPages().subscribe(pages => {
+    //   console.log('pages: ', pages);
+    //   this.appPages = [...this.appPages, ...pages];
+    // });
+  }
+
   
   
   setupPush(){
