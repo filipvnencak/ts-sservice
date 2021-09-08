@@ -6,14 +6,10 @@
       <ion-buttons slot="start">
         <ion-back-button defaultHref="/tab1"></ion-back-button>
       </ion-buttons>
-      
-       <ion-title>
-        <div style="white-space: normal; text-align: center;">{{ post?.title.rendered }} </div></ion-title> 
-      
-    
     </ion-toolbar>
   </ion-header>
-  
+  <ion-title>
+    <div style=" text-align: center;">{{ post?.title.rendered }} </div></ion-title> 
   <div *ngIf="post">
     <img [src]="post.media_url" [style.width]="'100%'" *ngIf="post.media_url">
     <div [innerHTML]="post.content.rendered"></div>
