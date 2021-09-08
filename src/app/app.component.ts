@@ -28,7 +28,11 @@ export class AppComponent {
   alertController: any;
   constructor(
 
-    private oneSignal: OneSignal, private storage: Storage, private platform: Platform, private statusBar: StatusBar, private api: ApiService,
+    private oneSignal: OneSignal, 
+    private storage: Storage, 
+    private platform: Platform, 
+    private statusBar: StatusBar, 
+    private api: ApiService,
 
   ) {
     // this.initializeApp();

@@ -13,9 +13,9 @@
   <ion-img  src="assets/images/Photos/{{Resorts.cover}}.jpg"></ion-img>  
   
   <ion-cards >
-  <ion-card>
+  <ion-card [routerLink]="['weather']">
     <!-- weather card -->
-  <ion-item lines= "none" [routerLink]="['weather']">
+  <ion-item lines= "none" >
     <ion-card-subtitle color="primary">Weather</ion-card-subtitle>
    </ion-item> 
    <ion-item lines= "none" *ngIf="place"  >

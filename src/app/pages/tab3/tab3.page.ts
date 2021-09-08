@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-tab3',
@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  @ViewChild("header") header: HTMLElement;
 
-  constructor() {}
+  constructor(
+    public renderer: Renderer2
+  ) {}
 
+
+  ionViewWillEnter() {
+    this.renderer.setStyle(this.header['el'], 'webkitTransition', 'top 700ms');
+  }
 }

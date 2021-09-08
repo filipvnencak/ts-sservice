@@ -1,17 +1,17 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title>Resorts</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+<ion-content scrollEvents="true" (ionScroll)='onContentScroll($event)'>
+  <ion-header class="ion-no-border" #header>
+    <ion-toolbar >
+      <ion-img src='assets/images/TATRYsuperSKI_logo_TTS.png' ></ion-img>
+    </ion-toolbar>
+  </ion-header>
   
   <ion-cards *ngFor="let resorts of Resorts">
-  <ion-card>
+  <ion-card >
       <ion-item  lines="none" [routerLink]="['/tabs/resorts', resorts.id]">
         <ion-img  src="assets/images/logos/{{resorts.logo}}.png"></ion-img>
-      <ion-card-subtitle slot="end">{{resorts.name}}</ion-card-subtitle>
+      <ion-card-subtitle  slot="end">{{resorts.name}}</ion-card-subtitle>
     </ion-item>
   </ion-card>
 </ion-cards>
+
 </ion-content>
