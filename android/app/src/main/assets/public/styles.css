@@ -214,8 +214,14 @@ ion-content {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-ion-title {
-  position: static;
+.wrap-text {
+  overflow: visible;
+  text-overflow: unset;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-all;
+  font-size: medium;
 }
 /*
  * App Global CSS

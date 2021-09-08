@@ -1,15 +1,19 @@
 
-
+<ion-header class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-img src='assets/images/TATRYsuperSKI_logo_TTS.png' ></ion-img>
+    <ion-buttons slot="end">
+      <ion-button (click)="onClick()">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 <ion-content class="ion-padding">
-  <ion-header class="ion-no-border">
-    <ion-toolbar >
-      <ion-buttons slot="start">
-        <ion-back-button defaultHref="/tab1"></ion-back-button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-header>
-  <ion-title>
-    <div style=" text-align: center;">{{ post?.title.rendered }} </div></ion-title> 
+  <h4 style="text-align: center;">{{ post?.title.rendered }} </h4> 
+  
   <div *ngIf="post">
     <img [src]="post.media_url" [style.width]="'100%'" *ngIf="post.media_url">
     <div [innerHTML]="post.content.rendered"></div>
