@@ -44,6 +44,10 @@ const routes = [
         path: '',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_tabs_tabs_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../app/pages/tabs/tabs.module */ 5557)).then(m => m.TabsPageModule)
     },
+    {
+        path: 'profile',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_profile_profile_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/profile/profile.module */ 8558)).then(m => m.ProfilePageModule)
+    },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };

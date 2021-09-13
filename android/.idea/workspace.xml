@@ -29,11 +29,17 @@
   <component name="ChangeListManager">
     <list default="true" id="126a3f69-2248-41e3-bb8f-e6ddaa24de11" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/pages/post-detail/post-detail.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/post-detail/post-detail.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/app/pages/tab1/tab1.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/tab1/tab1.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/pages/tab3/tab3.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/tab3/tab3.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/pages/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/tabs/tabs.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/theme/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

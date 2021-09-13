@@ -19,7 +19,8 @@ export class ResortPage implements OnInit {
   place;
   Resorts: any;
   weatherIcon;
-  
+
+
 
   
   constructor( private readonly ResortService: ResortsService,
@@ -41,12 +42,13 @@ this.loadWeather();
 
 loadWeather() {
 
-  this.weatherService.getCurrentWeather(this.Resorts.city).subscribe(res=>{
-    console.log('weater result: ', res);
+  this.weatherService.getCurrentWeather(this.Resorts.lat, this.Resorts.lon).subscribe(res=>{
+    console.log('weather result: ', res);
     this.place = res;
     this.weatherIcon = 'http://openweathermap.org/img/w/' + res['weather'][0].icon + '.png';
     
       
   }) 
 }
+
 }
