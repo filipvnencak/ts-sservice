@@ -3,11 +3,11 @@ import { ApiService } from '../../services/api.service';
 import { LoadingController, PopoverController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss']
 })
-export class Tab1Page {
+export class HomePage {
   page = 1;
   posts = [];
   totalPages = 0;
