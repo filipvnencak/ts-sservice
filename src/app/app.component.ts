@@ -5,6 +5,8 @@ import { Storage } from '@ionic/storage';
 import { Platform } from '@ionic/angular';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { ApiService } from './services/api.service';
+import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-native';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -27,16 +29,16 @@ export class AppComponent {
 
   alertController: any;
   constructor(
-
     private oneSignal: OneSignal, 
     private storage: Storage, 
     private platform: Platform, 
     private statusBar: StatusBar, 
     private api: ApiService,
-
   ) {
-    // this.initializeApp();
-    this.storage.create()
+    this.storage.create();
+    CapacitorGoogleMaps.initialize({
+      key: environment.mapsKey
+    });
   }
   
   initializeApp() {

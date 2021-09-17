@@ -28,19 +28,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="126a3f69-2248-41e3-bb8f-e6ddaa24de11" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/capacitor.build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/capacitor.plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/capacitor.plugins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/common.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/common.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/public/vendor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/skicontrol/TatrySuperSki/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/skicontrol/TatrySuperSki/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/App/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/resorts/resorts.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/pages/tab1/tab1.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/tab1/tab1.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/pages/tab3/tab3.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/tab3/tab3.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/app/pages/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/tabs/tabs.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/theme/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/pages/activity/activity.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/activity/activity.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/pages/activity/activity.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/activity/activity.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/pages/activity/activity.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/pages/activity/activity.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +63,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -64,7 +91,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="SerialNumber@df3f81a2" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-08-31T12:04:57.168455Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-09-17T13:57:26.312927Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="true" />
   </component>
@@ -163,24 +190,28 @@
       <screen x="0" y="25" width="2560" height="1337" />
     </state>
     <state x="968" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.352.1920.1055/0.25.2560.1337@0.25.2560.1337" timestamp="1628774771488" />
-    <state width="1259" height="380" key="GridCell.Tab.0.bottom" timestamp="1628779280441">
-      <screen x="0" y="25" width="2560" height="1337" />
+    <state width="939" height="287" key="GridCell.Tab.0.bottom" timestamp="1631886965423">
+      <screen x="2560" y="352" width="1920" height="1055" />
     </state>
+    <state width="939" height="287" key="GridCell.Tab.0.bottom/2560.352.1920.1055/0.25.2560.1333@2560.352.1920.1055" timestamp="1631886965423" />
     <state width="1259" height="380" key="GridCell.Tab.0.bottom/2560.352.1920.1055/0.25.2560.1337@0.25.2560.1337" timestamp="1628779280441" />
     <state width="2518" height="380" key="GridCell.Tab.0.bottom/2560.352.1920.977/0.25.2560.1415@0.25.2560.1415" timestamp="1628520853260" />
-    <state width="1259" height="380" key="GridCell.Tab.0.center" timestamp="1628779280440">
-      <screen x="0" y="25" width="2560" height="1337" />
+    <state width="939" height="287" key="GridCell.Tab.0.center" timestamp="1631886965422">
+      <screen x="2560" y="352" width="1920" height="1055" />
     </state>
+    <state width="939" height="287" key="GridCell.Tab.0.center/2560.352.1920.1055/0.25.2560.1333@2560.352.1920.1055" timestamp="1631886965422" />
     <state width="1259" height="380" key="GridCell.Tab.0.center/2560.352.1920.1055/0.25.2560.1337@0.25.2560.1337" timestamp="1628779280440" />
     <state width="2518" height="380" key="GridCell.Tab.0.center/2560.352.1920.977/0.25.2560.1415@0.25.2560.1415" timestamp="1628520853259" />
-    <state width="1259" height="380" key="GridCell.Tab.0.left" timestamp="1628779280440">
-      <screen x="0" y="25" width="2560" height="1337" />
+    <state width="939" height="287" key="GridCell.Tab.0.left" timestamp="1631886965422">
+      <screen x="2560" y="352" width="1920" height="1055" />
     </state>
+    <state width="939" height="287" key="GridCell.Tab.0.left/2560.352.1920.1055/0.25.2560.1333@2560.352.1920.1055" timestamp="1631886965422" />
     <state width="1259" height="380" key="GridCell.Tab.0.left/2560.352.1920.1055/0.25.2560.1337@0.25.2560.1337" timestamp="1628779280440" />
     <state width="2518" height="380" key="GridCell.Tab.0.left/2560.352.1920.977/0.25.2560.1415@0.25.2560.1415" timestamp="1628520853258" />
-    <state width="1259" height="380" key="GridCell.Tab.0.right" timestamp="1628779280440">
-      <screen x="0" y="25" width="2560" height="1337" />
+    <state width="939" height="287" key="GridCell.Tab.0.right" timestamp="1631886965422">
+      <screen x="2560" y="352" width="1920" height="1055" />
     </state>
+    <state width="939" height="287" key="GridCell.Tab.0.right/2560.352.1920.1055/0.25.2560.1333@2560.352.1920.1055" timestamp="1631886965422" />
     <state width="1259" height="380" key="GridCell.Tab.0.right/2560.352.1920.1055/0.25.2560.1337@0.25.2560.1337" timestamp="1628779280440" />
     <state width="2518" height="380" key="GridCell.Tab.0.right/2560.352.1920.977/0.25.2560.1415@0.25.2560.1415" timestamp="1628520853259" />
   </component>

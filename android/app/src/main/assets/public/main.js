@@ -75,15 +75,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tslib */ 4762);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tslib */ 4762);
 /* harmony import */ var _raw_loader_app_component_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !raw-loader!./app.component.html */ 1106);
 /* harmony import */ var _app_component_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component.scss */ 3069);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 7716);
 /* harmony import */ var _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic-native/onesignal/ngx */ 1779);
 /* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/storage */ 1628);
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic/angular */ 476);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ionic/angular */ 476);
 /* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ 3494);
 /* harmony import */ var _services_api_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/api.service */ 5830);
+/* harmony import */ var _capacitor_community_capacitor_googlemaps_native__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @capacitor-community/capacitor-googlemaps-native */ 3215);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../environments/environment */ 2340);
+
+
 
 
 
@@ -112,8 +116,10 @@ let AppComponent = class AppComponent {
                 icon: 'person-circle'
             }
         ];
-        // this.initializeApp();
         this.storage.create();
+        _capacitor_community_capacitor_googlemaps_native__WEBPACK_IMPORTED_MODULE_6__.CapacitorGoogleMaps.initialize({
+            key: _environments_environment__WEBPACK_IMPORTED_MODULE_7__.environment.mapsKey
+        });
     }
     initializeApp() {
         this.platform.ready().then(() => {
@@ -144,12 +150,12 @@ let AppComponent = class AppComponent {
 AppComponent.ctorParameters = () => [
     { type: _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_2__.OneSignal },
     { type: _ionic_storage__WEBPACK_IMPORTED_MODULE_3__.Storage },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.Platform },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_8__.Platform },
     { type: _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__.StatusBar },
     { type: _services_api_service__WEBPACK_IMPORTED_MODULE_5__.ApiService }
 ];
-AppComponent = (0,tslib__WEBPACK_IMPORTED_MODULE_7__.__decorate)([
-    (0,_angular_core__WEBPACK_IMPORTED_MODULE_8__.Component)({
+AppComponent = (0,tslib__WEBPACK_IMPORTED_MODULE_9__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_10__.Component)({
         selector: 'app-root',
         template: _raw_loader_app_component_html__WEBPACK_IMPORTED_MODULE_0__.default,
         styles: [_app_component_scss__WEBPACK_IMPORTED_MODULE_1__.default]
@@ -364,7 +370,8 @@ const environment = {
     apiKey: '4e3b332f888f8994ba06993ee366c18a',
     baseURL: 'https://api.openweathermap.org/data/2.5',
     apiUrl: 'https://tss.1pk0.sk//index.php//wp-json//wp//v2',
-    authUrl: 'https://tss.1pk0.sk//index.php//wp-json'
+    authUrl: 'https://tss.1pk0.sk//index.php//wp-json',
+    mapsKey: 'AIzaSyA8QypmUA49YTKBZeUlIYXI7Qe6iv2nAVE'
 };
 /*
  * For easier debugging in development mode, you can import the following file
