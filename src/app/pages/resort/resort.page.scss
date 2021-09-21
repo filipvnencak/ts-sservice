@@ -1,7 +1,5 @@
 
-ion-card {
-    margin-top: á,vw;
-}
+
 
 ion-grid ion-row {
     display: flex;
@@ -9,6 +7,18 @@ align-items: center;
 justify-content: center;
 }
 ion-content{
-    background-color:#fff;
+    
   --background: url(../../../assets/images/TATRYsuperSKI_logo_TTS.png) no-repeat center center / contain;
+  
+
 }
+
+@media (min-width: 1000px) and (max-width: 50000px) {
+    ion-card{
+      border-radius: 50px;
+      margin-right: 20px;
+      max-height: 200px;
+    }
+
+    
+  }

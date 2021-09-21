@@ -1,4 +1,4 @@
-<ion-content scrollEvents="true" (ionScroll)='onContentScroll($event)'>
+<ion-content padding scrollEvents="true" (ionScroll)='onContentScroll($event)'>
   <ion-header class="ion-no-border" #header>
     <ion-toolbar >
       <!-- <ion-img src='assets/images/TATRYsuperSKI_logo_TTS.png' ></ion-img> -->
@@ -7,28 +7,47 @@
   </ion-header>
 
   <ion-grid>
-    <ion-row class="ion-align-items-center">
-      <ion-col class="ion-align-self-center">
-        ion-col
+    <ion-row  class="ion-align-items-center, small">
+      <ion-col size="4" class="border-line" >
+        Time:
       </ion-col>
-      <ion-col class="ion-align-self-center">
-        ion-col
+      <ion-col size="4"class="border-line">
+        Pace:
       </ion-col>
-      <ion-col class="ion-align-self-center"> 
-        ion-col
+      <ion-col size="4" > 
+        Distance
       </ion-col>
     </ion-row>
-    <ion-row class="ion-align-items-center">
-      <ion-col class="ion-align-self-center">
-        ion-col
+    <ion-row size="5" class="ion-align-items-center, high">
+      <!-- Time -->
+      <ion-col size="4" class="border-line">
+        20:47
       </ion-col>
-      <ion-col class="ion-align-self-center">
-        ion-col
+      <!-- Pace -->
+      <ion-col size="4" class="border-line">
+        5:56 /km
       </ion-col>
-      <ion-col class="ion-align-self-center"> 
-        ion-col
+      <!-- Distance -->
+      <ion-col size="4"> 
+        3.5km
       </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-row>
+        <ion-button color="primary" full (click)="startTracking()" *ngIf="!isTracking">
+          <ion-icon slot="icon-only" size="large" name="play"></ion-icon>
+        </ion-button>
+        </ion-row>
+        <ion-row>
+        <ion-button color="danger" full (click)="stopTracking()" *ngIf="isTracking" >
+          <ion-icon slot="icon-only" size="large" name="square"></ion-icon>
+        </ion-button>
+        </ion-row>
+      </ion-col>
+
     </ion-row>
   </ion-grid>
+ 
   <div id="map" #map></div>
 </ion-content>

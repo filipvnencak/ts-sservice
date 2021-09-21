@@ -1,6 +1,10 @@
 import { Component, Renderer2, ViewChild, ElementRef } from '@angular/core';
 import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-native';
+
 import { Geolocation } from '@capacitor/geolocation';
+import { Storage } from '@ionic/storage';
+
+declare var google;
 
 @Component({
   selector: 'app-activity',
@@ -11,8 +15,21 @@ export class ActivityPage {
   @ViewChild("header") header: HTMLElement;
   @ViewChild('map') mapView: ElementRef;
 
+  
+  currentMapTrack = null;
+
+  isTracking = false;
+  trackedRoute = [];
+  previousTracks = [];
+  private lat: number;
+  private lng: number;
+
+  private watch: any;
+
+
   constructor(
-    public renderer: Renderer2
+    public renderer: Renderer2,
+    private storage: Storage,
   ) {}
 
 
@@ -55,10 +72,47 @@ export class ActivityPage {
         latitude: coordinates.coords.latitude,
         longitude: coordinates.coords.longitude,
         bearing: 0,
-        zoom: 10
+        zoom: 10,
       });
     });
   }
+
+  // options = {
+  //   enableHighAccuracy: true,
+  //   timeout: 5000,
+  //   maximumAge: 0
+  // };
+
+ startTracking(){
+
+
+    const options=
+{
+timeout: 60
+};
+  this.isTracking = true;
+  this.watch = Geolocation.watchPosition(options, (position, err) => {
+    if (position) {
+      this.trackedRoute.push(
+        position.coords.latitude,
+        position.coords.longitude,
+        position.timestamp
+      );
+    }
+  });
+};
+stopTracking() {
+  let newRoute = { finished: new Date().getTime(), path: this.trackedRoute };
+  this.previousTracks.push(newRoute);
+  this.storage.set('routes', this.previousTracks);
+ 
+  this.isTracking = false;
+  this.currentMapTrack.setMap(null);
+}
+
+
+
+
  
   ionViewDidLeave() {
     CapacitorGoogleMaps.close();

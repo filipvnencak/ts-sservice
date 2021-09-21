@@ -61,7 +61,7 @@
    * -------------------------------------------
    */
   body {
-    --ion-color-primary: #a6c3e1;
+    --ion-color-primary: #246bb4;
     --ion-color-primary-rgb: 166, 195, 225;
     --ion-color-primary-contrast: #000000;
     --ion-color-primary-contrast-rgb: 0, 0, 0;
@@ -199,6 +199,7 @@ ion-content {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  background-color: var(--ion-color-primary-contrast);
 }
 .wrap-text {
   overflow: visible;
@@ -213,7 +214,7 @@ ion-card {
   border-radius: 7.5vw;
   -webkit-backdrop-filter: blur(5px) contrast(0.8);
           backdrop-filter: blur(5px) contrast(0.8);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(var(--ion-color-primary-contrast-rgb), 0.7);
   box-shadow: none;
 }
 ion-item {
