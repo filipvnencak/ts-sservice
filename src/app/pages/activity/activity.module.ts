@@ -7,6 +7,7 @@ import { ActivityPage } from './activity.page';
 import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 
 import { ActivityPageRoutingModule } from './activity-routing.module';
+import { ShareComponentModule } from '../../components/share-componennt.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { ActivityPageRoutingModule } from './activity-routing.module';
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: ActivityPage }]),
     ActivityPageRoutingModule,
+    ShareComponentModule
   ],
   declarations: [ActivityPage]
 })

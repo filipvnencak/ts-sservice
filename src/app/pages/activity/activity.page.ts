@@ -3,6 +3,7 @@ import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-n
 
 import { Geolocation } from '@capacitor/geolocation';
 import { Storage } from '@ionic/storage';
+import { TimerComponent } from '../../components/timer/timer.component'
 
 declare var google;
 
@@ -18,23 +19,16 @@ export class ActivityPage {
   
   currentMapTrack = null;
 
-  isTracking = false;
-  trackedRoute = [];
-  previousTracks = [];
-  private lat: number;
-  private lng: number;
-
-  private watch: any;
-
+  
 
   constructor(
     public renderer: Renderer2,
     private storage: Storage,
-  ) {}
-
+    
+  ) {} 
+  
 
   ionViewWillEnter() {
-    this.renderer.setStyle(this.header['el'], 'webkitTransition', 'top 700ms');
     
   }
   ionViewDidEnter(){
@@ -83,37 +77,7 @@ export class ActivityPage {
   //   maximumAge: 0
   // };
 
- startTracking(){
 
-
-    const options=
-{
-timeout: 60
-};
-  this.isTracking = true;
-  this.watch = Geolocation.watchPosition(options, (position, err) => {
-    if (position) {
-      this.trackedRoute.push(
-        position.coords.latitude,
-        position.coords.longitude,
-        position.timestamp
-      );
-    }
-  });
-};
-stopTracking() {
-  let newRoute = { finished: new Date().getTime(), path: this.trackedRoute };
-  this.previousTracks.push(newRoute);
-  this.storage.set('routes', this.previousTracks);
- 
-  this.isTracking = false;
-  this.currentMapTrack.setMap(null);
-}
-
-
-
-
- 
   ionViewDidLeave() {
     CapacitorGoogleMaps.close();
   }

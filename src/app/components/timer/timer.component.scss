@@ -1,0 +1,21 @@
+ion-button{
+    height: 10vh;
+    width: 10vh;
+    --border-radius: 50%;
+  }
+  ion-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .border-line{
+    border-right: 2px solid var(--ion-color-medium-shade);
+    
+  }
+
+  .high{
+    font-size: large;
+  }
+  .small{
+    font-size: small;
+  }

@@ -8,7 +8,9 @@ export const environment = {
   baseURL: 'https://api.openweathermap.org/data/2.5',
   apiUrl: 'https://tss.1pk0.sk//index.php//wp-json//wp//v2',
   authUrl: 'https://tss.1pk0.sk//index.php//wp-json',
-  mapsKey: 'AIzaSyA8QypmUA49YTKBZeUlIYXI7Qe6iv2nAVE'
+  mapsKey: 'AIzaSyA8QypmUA49YTKBZeUlIYXI7Qe6iv2nAVE',
+  stripePublish: 'pk_test_51JCm9SACNmdc9kfLpvq4gcpVva3cuXpDXwIWlA9Z8zLVSjc1QoaDLYVWbwsTZXORtyTMwm7BrIJkLu8FWYjkU5il00HOz8cQrM',
+  stripePrivate: 'sk_test_51JCm9SACNmdc9kfLq8bmjdpYR5Dvp5AGCCrjOrPRDMkOq2CwJuuNhEc6UntWipnJCzdHNw115zOTVOAFvlZVUrAq00cug1yCPt'
   
 };
 

@@ -1,0 +1,43 @@
+<ion-grid   >
+  <ion-row  class="ion-align-items-center, small">
+    <ion-col size="4" class="border-line" >
+      Time:
+    </ion-col>
+    <ion-col size="4"class="border-line">
+      Pace:
+    </ion-col>
+    <ion-col size="4" > 
+      Distance:
+    </ion-col>
+  </ion-row>
+  <ion-row size="5" class="ion-align-items-center, high">
+    <!-- Time -->
+    <ion-col size="4" class="border-line">
+     <ion-label>{{elapsed.h}}:{{elapsed.m}}:{{elapsed.s}}</ion-label>
+    </ion-col>
+    <!-- Pace -->
+    <ion-col  size="4" class="border-line">
+      <ion-label> </ion-label>
+    </ion-col>
+    <!-- Distance -->
+    <ion-col size="4"> 
+     <ion-label></ion-label>
+    </ion-col>
+  </ion-row>
+ 
+  <ion-row>
+    <ion-col>
+      <ion-row>
+      <ion-button color="primary" full (click)="startTracking()" *ngIf="!isTracking">
+        <ion-icon slot="icon-only" size="large" name="play"></ion-icon>
+      </ion-button>
+      </ion-row>
+      <ion-row>
+      <ion-button color="danger" full (click)="stopTracking()" *ngIf="isTracking" >
+        <ion-icon slot="icon-only" size="large" name="square"></ion-icon>
+      </ion-button>
+      </ion-row>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>

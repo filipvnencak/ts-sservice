@@ -8,6 +8,7 @@ import { ApiService } from './services/api.service';
 import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-native';
 import { environment } from '../environments/environment';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -34,12 +35,14 @@ export class AppComponent {
     private platform: Platform, 
     private statusBar: StatusBar, 
     private api: ApiService,
+    
   ) {
     this.storage.create();
     CapacitorGoogleMaps.initialize({
       key: environment.mapsKey
     });
   }
+  
   
   initializeApp() {
     this.platform.ready().then(() => {
