@@ -1,41 +1,33 @@
-
 ion-card ion-img {
-    max-width: 30vw;
-    height: 15vw;
+  max-width: 30vw;
+  height: 15vw;
 }
 
-ion-card{
-    // box-shadow: 4px 3px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 40px;
+ion-card {
+  border-radius: 40px;
+  backdrop-filter: blur(5px) contrast(0.8);
+  background: rgba(var(--ion-color-primary-contrast-rgb), 0.7);
+  box-shadow: none;
+  max-height: 12vh;
+}
 
-    backdrop-filter: blur(5px) contrast(.8);
-    // overflow: hidden;
-    background: rgba(var(--ion-color-primary-contrast-rgb),0.7);
-    box-shadow: none;
-    max-height: 12vh;
-    
-    
-  }
-
-  ion-img{
-    max-height: 10vh;
-    align-items: flex-start;
-  }
-  ion-content{
-    
-    --background: url(../../../assets/images/TATRYsuperSKI_logo_TTS.png) no-repeat center center / contain;
-  }
+ion-img {
+  max-height: 10vh;
+  align-items: flex-start;
+}
+ion-content {
+  --background: url(../../../assets/images/TATRYsuperSKI_logo_TTS.png) no-repeat
+    center center / contain;
+}
 
 ion-item {
-    --background: rgba(0,0,0,0);
-    --border-color: rgba(0,0,0,0);
-    
+  --background: rgba(0, 0, 0, 0);
+  --border-color: rgba(0, 0, 0, 0);
 }
 
 @media (min-width: 1000px) and (max-width: 50000px) {
-  ion-card{
+  ion-card {
     border-radius: 100px;
     margin-right: 20px;
   }
 }
-
